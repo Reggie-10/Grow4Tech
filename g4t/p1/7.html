@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dictionary</title>
+</head>
+
+<body>
+    <h1>Glossary on Python</h1>
+    <ol>
+        <li>
+            <h2>annotation</h2>
+        </li>
+        <p>A label associated with a variable, a class attribute or a function parameter or return value, used by
+            convention as a type hint.</p>
+        <ul>
+            <li>Annotations of local variables cannot be accessed at runtime, but annotations of global variables, class
+                attributes, and functions are stored in the __annotations__ special attribute of modules, classes, and
+                functions, respectively.</li>
+        </ul>
+        <li>
+            <h2>argument</h2>
+        </li>
+        <p>A value passed to a function (or method) when calling the function. There are two kinds of argument:</p>
+        <ul>
+            <li>keyword argument: an argument preceded by an identifier (e.g. name=) in a function call or passed as a
+                value in a dictionary preceded by **. For example, 3 and 5 are both keyword arguments in the following
+                calls to complex():complex(real=3, imag=5)
+                complex(**{'real': 3, 'imag': 5})</li>
+            <li>positional argument: an argument that is not a keyword argument. Positional arguments can appear at the
+                beginning of an argument list and/or be passed as elements of an iterable preceded by *. For example, 3
+                and 5 are both positional arguments in the following calls:complex(3, 5)
+                complex(*(3, 5))</li>
+        </ul>
+        <li>
+            <h2>bytes-like object</h2>
+        </li>
+        <p>An object that supports the Buffer Protocol and can export a C-contiguous buffer. This includes all bytes,
+            bytearray, and array.array objects, as well as many common memoryview objects. Bytes-like objects can be
+            used for various operations that work with binary data; these include compression, saving to a binary file,
+            and sending over a socket.</p>
+        <ul>
+            <li>Some operations need the binary data to be mutable. The documentation often refers to these as
+                “read-write bytes-like objects”. Example mutable buffer objects include bytearray and a memoryview of a
+                bytearray. Other operations require the binary data to be stored in immutable objects (“read-only
+                bytes-like objects”); examples of these include bytes and a memoryview of a bytes object.</li>
+        </ul>
+        <li>
+            <h2>callable</h2>
+        </li>
+        <p>A callable is an object that can be called, possibly with a set of arguments (see argument), with the
+            following syntax: callable(argument1, argument2, argumentN)</p>
+        <ul>
+            <li>A function, and by extension a method, is a callable. An instance of a class that implements the
+                __call__() method is also a callable.</li>
+        </ul>
+        <li>
+            <h2>generator expression</h2>
+        </li>
+        <p>An expression that returns an iterator. It looks like a normal expression followed by a for clause defining a
+            loop variable, range, and an optional if clause. The combined expression generates values for an enclosing
+            function</p>
+        <ul>
+            <li>Example:sum(i*i for i in range(10))->285</li>
+        </ul>
+    </ol>
+
+</body>
+
+</html>
